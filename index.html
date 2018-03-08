@@ -3,11 +3,13 @@
 <head>
 	<!-- required meta tags -->
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 	<title>Restaurant Online</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
 	<!-- bootstrap css -->
 	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -33,10 +35,10 @@
 			</button>
 		</div>
 		<div id="collapsable-nav" class="collapsable navbar-collapse">
-			<ul id="nav-list" class="nav navbar-nav navbar-right">
+		<ul id="nav-list" class="nav navbar-nav navbar-right">
 			<li>
 				<a href="menu-categories.html">
-					<span class="glyphicon glyicon-cutlery">
+					<span class="glyphicon glyphicon-cutlery">
 						
 					</span>
 					<br> Menu
@@ -44,7 +46,7 @@
 			</li>
 			<li>
 				<a href="#">
-					<span class="">
+					<span class="glyphicon glyphicon-info-sign">
 						
 					</span>
 					<br>About
@@ -52,27 +54,51 @@
 			</li>
 			<li>
 				<a href="#">
-					<span class="">
+					<span class="glyphicon glyphicon-certificate">
 						
 					</span>
 					<br>Awards
 				</a>
 			</li>
+			<li id="phone" class="hidden-xs">
+			<a href="tel:02345-567-678">
+			<span>02345-567-678	</span>
+			</a>
+			<div>* We Deliver</div>
+			</li>
+		</ul>
 		</div>
 		</div>
 	</nav>
 </header>
-<div>
-	<li id="phone">
-		<a href="tel:02345-567-678">
-			<span>02345-567-678	</span>
-		</a>
-		<dir>* We Deliver</dir>
-	</li>
-	<div>
-	<img src="image/jumbotron_768.jpg" alt="" class="">	
+
+<div id="call-btn" class="visible-xs">
+	<a class="btn" href="tel:410-602-5008">
+	<span class="glyphicon glyphicon-earphone">410-602-5008</span>
+	</a>
+</div>
+<div id="xs-deliver" class="text-center visible-xs">* We Deliver</div>
+
+<div id="main-content" class="container">
+	<div class="jumbotron">
+	<img src="image/jumbotron_768.jpg" alt="" class="img-responsive visible-xs">	
 	</div>
 </div>
+
+<div class="col-md-4">
+	<a href="menu-categories.html"><div><span>menu</span></div></a>
+</div>
+<div class="col-md-4">
+	<a href="single-category.html"><div><span>specials</span></div>
+</div>
+<div class="col-md-4">
+	<a href="" target="blank">
+	<div>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.408492389601!2d-0.042563184447698715!3d51.52406707963784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d2f4ebb40dd%3A0xc0cca7de33120519!2sQueen+Mary+University+of+London!5e0!3m2!1sen!2suk!4v1520538783547" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe><span>map</span>
+	</div>
+	</a>
+</div>
+
 <!-- Optional JavaScript -->
 <!-- jQquery First, then Popper.js, then Bootstrap JS -->
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
