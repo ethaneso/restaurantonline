@@ -27,7 +27,7 @@
 				<span>Certification</span>
 				</p>
 			</div>
-			<button type="button">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar">1</span>
 				<span class="icon-bar">2</span>
@@ -38,32 +38,26 @@
 		<ul id="nav-list" class="nav navbar-nav navbar-right">
 			<li>
 				<a href="menu-categories.html">
-					<span class="glyphicon glyphicon-cutlery">
-						
-					</span>
-					<br> Menu
+				<span class="glyphicon glyphicon-cutlery"></span>
+				<br> Menu
 				</a>
 			</li>
 			<li>
 				<a href="#">
-					<span class="glyphicon glyphicon-info-sign">
-						
-					</span>
-					<br>About
+				<span class="glyphicon glyphicon-info-sign"></span>
+				<br>About
 				</a>
 			</li>
 			<li>
 				<a href="#">
-					<span class="glyphicon glyphicon-certificate">
-						
-					</span>
-					<br>Awards
+				<span class="glyphicon glyphicon-certificate"></span>
+				<br>Awards
 				</a>
 			</li>
 			<li id="phone" class="hidden-xs">
-			<a href="tel:02345-567-678">
-			<span>02345-567-678	</span>
-			</a>
+				<a href="tel:02345-567-678">
+				<span>02345-567-678	</span>
+				</a>
 			<div>* We Deliver</div>
 			</li>
 		</ul>
@@ -86,18 +80,35 @@
 </div>
 
 <div class="col-md-4">
-	<a href="menu-categories.html"><div><span>menu</span></div></a>
+	<a href="menu-categories.html"><div id="menu-title"><span>menu</span></div></a>
 </div>
 <div class="col-md-4">
-	<a href="single-category.html"><div><span>specials</span></div>
+	<a href="single-category.html"><div id="specials-title"><span>specials</span></div>
 </div>
 <div class="col-md-4">
 	<a href="" target="blank">
-	<div>
+	<div id="map-title">
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.408492389601!2d-0.042563184447698715!3d51.52406707963784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d2f4ebb40dd%3A0xc0cca7de33120519!2sQueen+Mary+University+of+London!5e0!3m2!1sen!2suk!4v1520538783547" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe><span>map</span>
 	</div>
 	</a>
 </div>
+
+<footer>
+	<div>
+		<div>
+			<section id="hours">
+				<span>Hours:</span>
+			</section>
+			<section id="address">
+				<span>Address:</span>
+			</section>
+			<section>
+				<p></p>
+			</section>
+		</div>
+		<div class="text-center">&copy; Copyright Ethan 2018</div>
+	</div>
+</footer>
 
 <!-- Optional JavaScript -->
 <!-- jQquery First, then Popper.js, then Bootstrap JS -->
