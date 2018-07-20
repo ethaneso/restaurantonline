@@ -3,16 +3,22 @@
 <head>
 	<!-- required meta tags -->
 	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 	<title>Restaurant Online</title>
-	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
-	<!-- bootstrap css -->
-	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/styles.css">
+<!--    <link rel="stylesheet" href="css/bootstrap.css">
 </head>
+
+
 <body>
+<!-- jQquery First, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="js/script.js"></script>
+
 <header>
 	<nav id="header-nav" class="navbar navbar-default">
 		<div class="container">
@@ -27,7 +33,7 @@
 				<span>Certification</span>
 				</p>
 			</div>
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
+			<button id="navbarToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="false">
 				<span class="sr-only">Toggle navigation</span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
@@ -86,13 +92,13 @@
 </div>
 
 <div id="home-title" class="row">
-	<div class="col-md-4">
+	<div class="col-md-4 col-sm-6 col-xs-12">
 	<a href="menu-categories.html"><div id="menu-title"><span>menu</span></div></a>
 	</div>
-	<div class="col-md-4">
-	<a href="single-categories.html"><div id="specials-title"><span>specials</span></div>
+	<div class="col-md-4 col-sm-6 col-xs-12">
+        <a href="single-categories.html"><div id="specials-title"><span>specials</span></div></a>
 	</div>
-	<div class="col-md-4">
+	<div class="col-md-4 col-sm-6 col-xs-12">
 	<a href="https://www.google.com/maps/place/Queen+Mary+University+of+London/@51.524067,-0.040374,16z/data=!4m5!3m4!1s0x0:0xc0cca7de33120519!8m2!3d51.5240671!4d-0.0403745?hl=en-US" target="blank">
 	<div id="map-title">
 	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2482.408492389601!2d-0.042563184447698715!3d51.52406707963784!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48761d2f4ebb40dd%3A0xc0cca7de33120519!2sQueen+Mary+University+of+London!5e0!3m2!1sen!2suk!4v1520538783547" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe><span>map</span>
@@ -106,10 +112,13 @@
 	<div class="container">
 		<div class="row">
 			<section id="hours" class="col-sm-4">
-				<span>Hours:</span>
+				<span>Hours:</span><br>
+                Mon - Sun: 9:00am - 10:00pm
 			</section>
 			<section id="address" class="col-sm-4">
-				<span>Address: </span>
+				<span>Address: </span><br>
+                Mile End Rd<br>
+                London E1 4NS, UK
 			</section>
 			<section>
 				<p></p>
@@ -119,11 +128,6 @@
 	</div>
 </footer>
 
-<!-- Optional JavaScript -->
-<!-- jQquery First, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-<script src="js/script.js"></script>
+
 </body>
 </html>
